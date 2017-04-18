@@ -35,23 +35,34 @@
     </header>
 
     <section>
-      <article class="contact">
-         <div class="address">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.22630105811!2d-71.35601264883883!3d42.635362225561224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a49be7c3d7c7%3A0xc6812145cc00c983!2sChina+Star+Dim+Sum+Lounge!5e0!3m2!1sen!2sus!4v1492475344327" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <div class="street">1733 Middlesex Street</div>
-            <div class="city_state_zipcode">Lowell, MA 01851</div >
-         </div>
-         <div class="phone"><a href="tel:19788567780">Tel: (978) 856-7780</a></div>
-         <div class="phone">Fax: <span class="fax">Fax: (978) 856-7750</span></div>
-      </article>
+      <h2>Catering</h2>
+      <p>Celebrate your events with us!</p>
+      <p>Social and Corporate Events seating for up to 300 guests!</p>
+      <ul class="events">
+        <li>Weddings</li>
+        <li>Anniversaries</li>
+        <li>Sweet 16's</li>
+        <li>Proms</li>
+        <li>Showers</li>
+        <li>Retirement Parties</li>
+        <li>Trade Shows</li>
+        <li>Meetings</li>
+        <li>And More!</li>
+      </ul>
+      <p>Contact us by phone or fill out the form for more information.</p>
 
-      <article class="hours">
-        <h3>Open 7 days a week</h3>
-        <p>Daily from <time>9:00AM</time> to <time>2:00AM</time></p>
-
-        <h3>Dim Sum Hours</h3>
-        <p>Daily from <time>9:00AM</time> to <time>3:00PM</time></p>
-      </article>
+      <form action="my-form.php" method="post">
+        <div class="catering_form">
+          <h3>Contact Us</h3>
+          <p>Fill in the form to contact us by email. All fields are required.</p>
+          <label><input type="text" name="name" placeholder="Name"></label>
+          <label><input type="tel" name="phone" placeholder="Phone Number"></label>
+          <label><input type="email" name="email" placeholder="Email Address"></label>
+          <label><input type="date" name="date" value="Event Date"></label>
+          <textarea name="description" placeholder="Message" rows="8" cols="80"></textarea>
+        </div>
+        <label><input type="submit" value="Send" class="formbutton"></label>
+      </form>
     </section>
 
     <footer>
