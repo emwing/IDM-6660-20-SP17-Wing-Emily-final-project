@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+html {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4; }
+
+h1 {
+  font-family: "Kaushan Script", Times, serif;
+  font-size: 1.875rem; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 700; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.menu_cntrl {
+  display: none;
+  visibility: hidden; }
+
+.menu_cntrl:checked ~ ul {
+  max-height: 100%; }
+
+@media screen and (min-width: 768px) {
+  .menu_cntrl_label {
+    display: none;
+    visibility: hidden; } }
+
+ul {
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    ul {
+      max-height: 100%;
+      height: auto; } }
+
+@media screen and (min-width: 768px) {
+  li {
+    display: inline; } }
+
+li a {
+  display: block;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    li a {
+      display: inline;
+      padding: 0.5rem 1rem;
+      height: auto; } }
+
+/*# sourceMappingURL=css.css.map */

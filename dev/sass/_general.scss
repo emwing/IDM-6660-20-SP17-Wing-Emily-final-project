@@ -1,0 +1,19 @@
+html {
+  font-family: $copy-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1 {
+  font-family: $header-font;
+  font-size: 1.875rem;
+}
+h2, h3, h4, h5, h6 {
+  font-family: $copy-font;
+  font-weight: 700;
+}
+
+ul { list-style: none; }
+
+a { text-decoration: none; }

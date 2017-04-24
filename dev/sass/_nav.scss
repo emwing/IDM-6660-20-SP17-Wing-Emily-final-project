@@ -1,0 +1,37 @@
+.menu_cntrl {
+  display: none;
+  visibility: hidden;
+}
+.menu_cntrl:checked ~ ul { max-height: 100%; }
+.menu_cntrl_label {
+  @include tablet {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+ul {
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+
+  @include tablet {
+    max-height: 100%;
+    height: auto;
+  }
+}
+li {
+  @include tablet { display: inline; }
+}
+li a {
+  display: block;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+
+  @include tablet {
+    display: inline;
+    padding: 0.5rem 1rem;
+    height: auto;
+  }
+}
