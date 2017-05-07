@@ -31,7 +31,7 @@ nav {
 }
 
 nav ul {
-  padding-top: 0.75rem;
+  padding: 0.75rem 0;
   margin-top: 0;
   max-height: 0;
   overflow: hidden;
@@ -48,7 +48,7 @@ nav li { padding: 0.5rem 0.75rem;
     padding: 1.5rem 1rem;
   }
 }
-nav li a {
+nav li a, nav p a {
   display: block;
   height: 100%;
   width: 100%;
@@ -60,7 +60,9 @@ nav li a {
   }
 }
 nav li:hover,
-nav li:active { background: $black; }
+nav li:active,
+nav p a:hover,
+nav p a:active { background: $black; }
 
 .current a {
   font-weight: 700;
@@ -77,6 +79,4 @@ nav li:active { background: $black; }
   background-color: $black;
   text-align: center;
 }
-.sidenav a {
-  color: $white;
-}
+.sidenav a { color: $white; }

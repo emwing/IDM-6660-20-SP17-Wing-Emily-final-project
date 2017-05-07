@@ -179,7 +179,7 @@ nav {
     visibility: hidden; } }
 
 nav ul {
-  padding-top: 0.75rem;
+  padding: 0.75rem 0;
   margin-top: 0;
   max-height: 0;
   overflow: hidden; }
@@ -195,18 +195,20 @@ nav li {
       display: inline;
       padding: 1.5rem 1rem; } }
 
-nav li a {
+nav li a, nav p a {
   display: block;
   height: 100%;
   width: 100%;
   color: #ffffff; }
   @media screen and (min-width: 768px) {
-    nav li a {
+    nav li a, nav p a {
       display: inline;
       height: auto; } }
 
 nav li:hover,
-nav li:active {
+nav li:active,
+nav p a:hover,
+nav p a:active {
   background: #27201f; }
 
 .current a {
