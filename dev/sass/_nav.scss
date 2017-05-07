@@ -30,7 +30,7 @@ nav {
   }
 }
 
-ul {
+nav ul {
   padding-top: 0.75rem;
   margin-top: 0;
   max-height: 0;
@@ -41,14 +41,14 @@ ul {
     height: 3rem;
   }
 }
-li { padding: 0.5rem 0.75rem;
+nav li { padding: 0.5rem 0.75rem;
 
   @include tablet {
     display: inline;
     padding: 1.5rem 1rem;
   }
 }
-li a {
+nav li a {
   display: block;
   height: 100%;
   width: 100%;
@@ -59,10 +59,24 @@ li a {
     height: auto;
   }
 }
-li:hover,
-li:active { background: $black; }
+nav li:hover,
+nav li:active { background: $black; }
 
 .current a {
   font-weight: 700;
   color: $red-lt;
+}
+
+// fast nav
+.sidenav {
+  padding: 1rem;
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  width: 5rem;
+  background-color: $black;
+  text-align: center;
+}
+.sidenav a {
+  color: $white;
 }

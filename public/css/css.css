@@ -46,18 +46,43 @@ ul {
 a {
   text-decoration: none; }
 
-header, .hero-bg {
+header {
   position: relative;
   width: 100%;
-  background: #5c000b; }
+  height: 20rem;
+  border-bottom: 0.25rem solid #27201f; }
+  @media screen and (min-width: 480px) {
+    header {
+      height: 25rem; } }
+  @media screen and (min-width: 768px) {
+    header {
+      height: 30rem; } }
+  @media screen and (min-width: 1024px) {
+    header {
+      height: 35rem; } }
   @media screen and (min-width: 1280px) {
-    header, .hero-bg {
-      margin: 0 auto;
-      width: auto;
-      padding: 0.25rem; } }
+    header {
+      height: 45rem; } }
 
-.hero-bg {
-  z-index: 1; }
+header#hero-home {
+  background: #5c000b url(../img/dimsum04.jpg);
+  background-size: cover; }
+
+header#hero-dimsum {
+  background: #5c000b url(../img/dimsum01.jpg);
+  background-size: cover; }
+
+header#hero-dinner {
+  background: #5c000b url(../img/chinesefood01.jpg);
+  background-size: cover; }
+
+header#hero-lunch {
+  background: #5c000b url(../img/chinesefood02.jpg);
+  background-size: cover; }
+
+header#hero-catering {
+  background: #5c000b url(../img/dimsum02.jpg);
+  background-size: cover; }
 
 .hero-content {
   padding: 1.5rem 0.5rem;
@@ -153,39 +178,177 @@ nav {
     display: none;
     visibility: hidden; } }
 
-ul {
+nav ul {
   padding-top: 0.75rem;
   margin-top: 0;
   max-height: 0;
   overflow: hidden; }
   @media screen and (min-width: 768px) {
-    ul {
+    nav ul {
       max-height: 100%;
       height: 3rem; } }
 
-li {
+nav li {
   padding: 0.5rem 0.75rem; }
   @media screen and (min-width: 768px) {
-    li {
+    nav li {
       display: inline;
       padding: 1.5rem 1rem; } }
 
-li a {
+nav li a {
   display: block;
   height: 100%;
   width: 100%;
   color: #ffffff; }
   @media screen and (min-width: 768px) {
-    li a {
+    nav li a {
       display: inline;
       height: auto; } }
 
-li:hover,
-li:active {
+nav li:hover,
+nav li:active {
   background: #27201f; }
 
 .current a {
   font-weight: 700;
   color: #a70014; }
+
+.sidenav {
+  padding: 1rem;
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  width: 5rem;
+  background-color: #27201f;
+  text-align: center; }
+
+.sidenav a {
+  color: #ffffff; }
+
+section {
+  padding: 1rem 0;
+  margin: 0 auto;
+  background: #ffffff;
+  border-left: 0.125rem solid #5c000b;
+  border-right: 0.125rem solid #5c000b;
+  text-align: center; }
+  @media screen and (min-width: 1024px) {
+    section {
+      max-width: 80rem; } }
+
+.flex-container {
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+
+.flex-left {
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .flex-left {
+      flex: 1 30%; } }
+
+.flex-left p, .flex-left ul {
+  margin-bottom: 1rem; }
+
+.flex-left ul {
+  font-style: italic; }
+
+.map {
+  width: 100%; }
+  @media screen and (min-width: 1024px) {
+    .map {
+      flex: 2 60%; } }
+
+.map-resp {
+  position: relative;
+  height: 17.5rem; }
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100; }
+
+.flex-form {
+  flex: 2 60%; }
+
+form label {
+  margin: 0.75rem 0;
+  display: block; }
+
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form input[type=date],
+textarea, #submit {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    form input[type=text],
+    form input[type=tel],
+    form input[type=email],
+    form input[type=date],
+    textarea, #submit {
+      width: 75%; } }
+
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form input[type=date] {
+  height: 2rem; }
+
+#submit {
+  padding: 0.75rem;
+  background-color: #5c000b;
+  color: #ffffff;
+  cursor: pointer; }
+
+#submit:hover {
+  background: #a70014; }
+
+.food_flexitem {
+  padding: 0.5rem;
+  border: 0.125rem solid #5c000b; }
+  @media screen and (min-width: 768px) {
+    .food_flexitem {
+      flex: 1 40%; } }
+  @media screen and (min-width: 1024px) {
+    .food_flexitem {
+      flex: 1 30%; } }
+
+.flex-container-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.flex_code {
+  flex: 1 10%;
+  text-align: left; }
+
+.flex_food {
+  flex: 2 65%;
+  text-align: left; }
+
+.flex_price {
+  flex: 1 20%;
+  text-align: right;
+  align-self: flex-end; }
+
+.flex_code:not(:nth-last-child(3)) {
+  border-bottom: 1px dotted #333333; }
+
+.flex_food:not(:nth-last-child(2)) {
+  border-bottom: 1px dotted #333333; }
+
+.flex_price:not(:last-of-type) {
+  border-bottom: 1px dotted #333333; }
 
 /*# sourceMappingURL=css.css.map */

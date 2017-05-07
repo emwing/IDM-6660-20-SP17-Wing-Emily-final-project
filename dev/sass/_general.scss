@@ -27,19 +27,38 @@ ul { list-style: none; }
 a { text-decoration: none; }
 
 // header hero image controls
-header, .hero-bg {
+header {
   position: relative;
   width: 100%;
-  background: $red-dk;
+  height: 20rem;
+  border-bottom: 0.25rem solid $black;
 
-  @include full {
-    margin: 0 auto;
-    width: auto;
-    padding: 0.25rem;
-    // max-width: 80rem;
-  }
+  @include phablet { height: 25rem; }
+  @include tablet { height: 30rem; }
+  @include desktop {height: 35rem; }
+  @include full { height: 45rem; }
 }
-.hero-bg { z-index: 1; }
+header#hero-home {
+  background: $red-dk url(../img/dimsum04.jpg);
+  background-size: cover;
+}
+header#hero-dimsum {
+  background: $red-dk url(../img/dimsum01.jpg);
+  background-size: cover;
+}
+header#hero-dinner {
+  background: $red-dk url(../img/chinesefood01.jpg);
+  background-size: cover;
+}
+header#hero-lunch {
+  background: $red-dk url(../img/chinesefood02.jpg);
+  background-size: cover;
+}
+header#hero-catering {
+  background: $red-dk url(../img/dimsum02.jpg);
+  background-size: cover;
+}
+
 .hero-content {
   padding: 1.5rem 0.5rem;
   position: absolute;

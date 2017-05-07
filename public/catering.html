@@ -29,43 +29,48 @@
       </ul>
     </nav>
 
-    <header>
+    <header id="hero-catering">
       <div class="hero-content">
         <h1>China Star Restaurant</h1>
         <h2>Dim Sum, Lounge, &amp; Bar</h2>
       </div>
-      <img src="img/dimsum04.jpg" alt="hero" class="hero-bg">
     </header>
 
     <section>
       <h2>Catering</h2>
-      <p>Celebrate your events with us!</p>
-      <p>Social and Corporate Events seating for up to 300 guests!</p>
-      <ul class="events">
-        <li>Weddings</li>
-        <li>Anniversaries</li>
-        <li>Sweet 16's</li>
-        <li>Proms</li>
-        <li>Showers</li>
-        <li>Retirement Parties</li>
-        <li>Trade Shows</li>
-        <li>Meetings</li>
-        <li>And More!</li>
-      </ul>
-      <p>Contact us by phone or fill out the form for more information.</p>
+      <div class="flex-container">
+        <article class="flex-left">
+          <h3>Celebrate your events with us!</h3>
+          <p>Social and Corporate Events seating for up to 300&nbsp;guests!</p>
+          <ul class="events">
+            <li>Weddings</li>
+            <li>Anniversaries</li>
+            <li>Sweet 16's</li>
+            <li>Proms</li>
+            <li>Showers</li>
+            <li>Retirement Parties</li>
+            <li>Trade Shows</li>
+            <li>Meetings</li>
+            <li>And More!</li>
+          </ul>
+          <p>Contact us by phone or fill out the form for more information.</p>
+        </article>
 
-      <form action="my-form.php" method="post">
-        <div class="catering_form">
-          <h3>Contact Us</h3>
-          <p>Fill in the form to contact us by email. All fields are required.</p>
-          <label><input type="text" name="name" placeholder="Name"></label>
-          <label><input type="tel" name="phone" placeholder="Phone Number"></label>
-          <label><input type="email" name="email" placeholder="Email Address"></label>
-          <label><input type="date" name="date" value="Event Date"></label>
-          <textarea name="description" placeholder="Message" rows="8" cols="80"></textarea>
-        </div>
-        <label><input type="submit" value="Send" class="formbutton"></label>
-      </form>
+        <article class="flex-form">
+          <form action="my-form.php" method="post">
+            <div class="catering_form">
+              <h3>Contact Us</h3>
+              <p>Fill in the form to contact us by email. All fields are required.</p>
+              <label><input type="text" name="name" placeholder="Name"></label>
+              <label><input type="tel" name="phone" placeholder="Phone Number"></label>
+              <label><input type="email" name="email" placeholder="Email Address"></label>
+              <label><input type="date" name="date"></label>
+              <textarea name="description" placeholder="Message" rows="8" cols="80"></textarea>
+            </div>
+            <label><input type="submit" value="Send" class="formbutton" id="submit"></label>
+          </form>
+        </article>
+      </div> <!-- ends .flex-container -->
     </section>
 
     <footer>
