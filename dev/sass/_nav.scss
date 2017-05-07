@@ -1,3 +1,23 @@
+// appearance controls
+nav {
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 0.25rem solid $black;
+  background: $silver;
+  font-size: 1rem;
+  color: $white;
+  text-align: center;
+
+  @include tablet {
+    padding-top: 0;
+    font-size: 1.125rem;
+  }
+}
+
+// responsive controls
 .menu_cntrl {
   display: none;
   visibility: hidden;
@@ -11,27 +31,38 @@
 }
 
 ul {
+  padding-top: 0.75rem;
   margin-top: 0;
   max-height: 0;
   overflow: hidden;
 
   @include tablet {
     max-height: 100%;
-    height: auto;
+    height: 3rem;
   }
 }
-li {
-  @include tablet { display: inline; }
-}
-li a {
-  display: block;
-  padding: 0.5rem;
-  height: 100%;
-  width: 100%;
+li { padding: 0.5rem 0.75rem;
 
   @include tablet {
     display: inline;
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+}
+li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: $white;
+
+  @include tablet {
+    display: inline;
     height: auto;
   }
+}
+li:hover,
+li:active { background: $black; }
+
+.current a {
+  font-weight: 700;
+  color: $red-lt;
 }

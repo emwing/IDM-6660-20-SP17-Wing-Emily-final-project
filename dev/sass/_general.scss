@@ -5,10 +5,18 @@ html {
   line-height: 1.4;
 }
 
-h1 {
-  font-family: $header-font;
-  font-size: 1.875rem;
+img {
+  max-width: 100%;
+  display: block;
 }
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  background: $red-lt url('../img/seigaiha-red2.png');
+}
+
+h1, section h2 { font-family: $header-font; }
 h2, h3, h4, h5, h6 {
   font-family: $copy-font;
   font-weight: 700;
@@ -17,3 +25,61 @@ h2, h3, h4, h5, h6 {
 ul { list-style: none; }
 
 a { text-decoration: none; }
+
+// header hero image controls
+header, .hero-bg {
+  position: relative;
+  width: 100%;
+  background: $red-dk;
+
+  @include full {
+    margin: 0 auto;
+    width: auto;
+    padding: 0.25rem;
+    // max-width: 80rem;
+  }
+}
+.hero-bg { z-index: 1; }
+.hero-content {
+  padding: 1.5rem 0.5rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.75);
+
+  @include phablet { top: 55%; }
+
+  @include tablet {
+    width: 65%;
+    top: 50%;
+  }
+  @include full { width: 40%; }
+}
+.hero-content h1, .hero-content h2 { line-height: 1.2; }
+.hero-content h1 { font-size: 1.5rem;
+  @include phablet { font-size: 2.125rem; }
+  @include tablet { font-size: 3rem; }
+  @include desktop { font-size: 4rem; }
+  @include full { font-size: 3rem; }
+}
+.hero-content h2 { font-size: 1rem;
+  @include phablet { font-size: 1.5rem; }
+  @include tablet { font-size: 2rem; }
+  @include desktop { font-size: 3rem; }
+  @include full { font-size: 2rem; }
+}
+
+// footer controls
+footer {
+  padding: 0.75rem 0.5rem;
+  background: $silver;
+  border-top: 0.25rem solid $black;
+  color: $white;
+  font-size: 0.875rem;
+  @include tablet { font-size: 1rem; }
+}
+
+header, footer { text-align: center; }

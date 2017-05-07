@@ -15,3 +15,9 @@
     @content;
   }
 }
+
+@mixin full {
+  @media #{$full-width} {
+    @content;
+  }
+}
